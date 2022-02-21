@@ -1,0 +1,25 @@
+{
+  "name": "first-extension",
+  "version": "1.0.0",
+  "description": "first extension",
+  "main": "src/intercept.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "@therealhunzik",
+  "license": "ISC",
+  "peerDependencies": {
+    "@magento/pwa-buildpack": "^11.1.0",
+    "@magento/venia-ui": "*",
+    "react": "^17.0.2",
+    "react-router-dom": "^6.2.1"
+  },
+  "pwa-studio": {
+    "targets": {
+      "intercepts": "src/intercept.js"
+    }
+  }
+}
